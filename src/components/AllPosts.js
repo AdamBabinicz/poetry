@@ -32,7 +32,22 @@ export default function AllPost() {
         <h3 className="text-lg text-black text-opacity-50 flex justify-center mb-12">
           blog pismacki
         </h3>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h4 className="mb-12 text-black text-opacity-50 grid md:grid-cols-3 gap-8">
+          <p>
+            Autor urodził się dokładnie 100 lat później, niż Nikola Tesla.
+            <br /> Nie tytułuje się żadnym przedrostkiem. Nie ma wyuczonego
+            zawodu. W swoim życiu wykonywał ich wiele.
+          </p>
+          <p>
+            Jako subiekt przez witrynę sklepową obserwował przechodzących ludzi.
+            Wtedy zauważył, że są jak „na sznurkach”.
+          </p>
+          <p>
+            Interesuje się kosmologią i programowaniem. Nie posiada dorobku; w
+            żadnej dziedzinie nie osiągnął mistrzostwa.
+          </p>
+        </h4>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 sm:grid-cols-1">
           {allPostsData &&
             allPostsData.map((post, index) => (
               <Link to={"/" + post.slug.current} key={post.slug.current}>
