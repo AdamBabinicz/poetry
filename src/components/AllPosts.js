@@ -24,7 +24,7 @@ export default function AllPost() {
   return (
     <div className="bg-black bg-opacity-25 min-h-screen p-12">
       <div className="container mx-auto">
-        <h2 className="text-5xl flex justify-center text-black text-opacity-75">
+        <h2 className="text-5xl flex justify-center text-black text-opacity-75 flex-wrap">
           Blo
           <sub className="text-5xl mt-2 transform rotate-45 -ml-4 mr-4">k</sub>
           &nbsp;wierszowany

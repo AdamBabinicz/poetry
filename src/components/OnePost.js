@@ -57,7 +57,7 @@ export default function OnePost() {
               </h2>
               <div className="flex justify-center text-black text-opacity-75">
                 <img
-                  className="w-10"
+                  // className="w-10"
                   src={urlFor(postData.authorImage).width(100).url()}
                   alt="Author"
                 />
