@@ -44,7 +44,7 @@ export default function OnePost() {
   return (
     <div className="bg-black bg-opacity-25  min-h-screen lg:p-24 w-full sm:p-4">
       <Link to="/">
-        <p className="text-black text-opacity-50 mb-6 hover:text-white text-opacity-50 transition duration-300 ease-in-out">
+        <p className="text-black text-opacity-50 mb-6 mt-4 ml-4 hover:text-white text-opacity-50 transition duration-300 ease-in-out">
           wstecz
         </p>
       </Link>
