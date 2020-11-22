@@ -50,7 +50,7 @@ export default function OnePost() {
       </Link>
       <div className="container shadow-lg mx-auto bg-gray-100 rounded-lg">
         <div className="relative">
-          <div className="absolute h-full w-full flex items-center justify-center p-8">
+          <div className="absolute h-full w-full flex items-center justify-center p-4">
             <div className="bg-white bg-opacity-75 rounded p-12">
               <h2 className="text-black text-opacity-75 text-3xl lg:text-6xl mb-4">
                 {postData.title}
@@ -74,7 +74,7 @@ export default function OnePost() {
             alt="main image of post"
           />
         </div>
-        <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full text-black text-opacity-75">
+        <div className="px-6 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full text-black text-opacity-75 flex items-center justify-center">
           <BlockContent
             blocks={postData.body}
             projectId={sanityClient.clientConfig.projectId}
