@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import sanityClient from "../client";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
+import { IoMdArrowDropleftCircle } from "react-icons/io";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -42,17 +43,17 @@ export default function OnePost() {
       </div>
     );
   return (
-    <div className="bg-black bg-opacity-25  min-h-screen lg:p-24 w-full sm:p-4">
+    <div className="bg-black bg-opacity-25  min-h-screen lg:px-40 lg:py-24 w-full relative">
       <Link to="/">
-        <p className="text-black text-opacity-50 mb-6 mt-4 ml-4 hover:text-white text-opacity-50 transition duration-300 ease-in-out">
-          wstecz
+        <p className="fixed text-4xl z-10 text-black text-opacity-50 top-0 left-0 h-16 w-16 flex justify-center items-center hover:text-black text-opacity-25 transition duration-300 ease-in-out">
+          <IoMdArrowDropleftCircle />
         </p>
       </Link>
-      <div className="container shadow-lg mx-auto bg-gray-100 rounded-lg">
+      <div className="container shadow-lg mx-auto bg-white rounded-lg">
         <div className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-4">
             <div className="bg-white bg-opacity-75 rounded p-12">
-              <h2 className="text-black text-opacity-75 text-3xl lg:text-6xl mb-4">
+              <h2 className="text-black text-opacity-75 text-3xl lg:text-5xl mb-4">
                 {postData.title}
               </h2>
               <div className="flex justify-center text-black text-opacity-75">

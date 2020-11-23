@@ -22,14 +22,17 @@ export default function AllPost() {
       .catch(console.error);
   }, []);
   return (
-    <div className="bg-black bg-opacity-25 min-h-screen p-12">
+    <div className="bg-black bg-opacity-25 min-h-screen p-12 lg:px-40 lg:py-24">
       <div className="container mx-auto">
         <h2 className="text-5xl flex justify-center text-black text-opacity-75 flex-wrap">
           Blo
           <sub className="text-5xl mt-2 transform rotate-45 -ml-4 mr-4">k</sub>
           &nbsp;wierszowany
         </h2>
-        <h3 className="text-lg text-black text-opacity-50 flex justify-center mb-12">
+        <h3
+          className="text-3xl text-white text-opacity-90 flex justify-center mb-12"
+          style={{ textShadow: "0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.72)" }}
+        >
           blog pismacki
         </h3>
         <h4 className="mb-12 text-black text-opacity-50 grid md:grid-cols-3 gap-8">
