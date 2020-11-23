@@ -43,7 +43,7 @@ export default function OnePost() {
       </div>
     );
   return (
-    <div className="bg-black bg-opacity-25  min-h-screen lg:px-40 lg:py-24 w-full relative">
+    <div className="bg-black bg-opacity-25  min-h-screen lg:px-40 lg:py-24 w-full relative overflow-x-hidden">
       <Link to="/">
         <p className="fixed text-4xl z-10 text-black text-opacity-50 top-0 left-0 h-16 w-16 flex justify-center items-center hover:text-black text-opacity-25 transition duration-300 ease-in-out">
           <IoMdArrowDropleftCircle />

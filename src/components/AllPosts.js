@@ -22,7 +22,7 @@ export default function AllPost() {
       .catch(console.error);
   }, []);
   return (
-    <div className="bg-black bg-opacity-25 min-h-screen p-12 lg:px-40 lg:py-24">
+    <div className="bg-black bg-opacity-25 min-h-screen p-12 lg:px-40 lg:py-24 overflow-x-hidden">
       <div className="container mx-auto">
         <h2 className="text-5xl text-center flex justify-center text-black text-opacity-75 flex-wrap">
           Blo
