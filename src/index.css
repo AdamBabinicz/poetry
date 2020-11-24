@@ -11,4 +11,11 @@ body {
   /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)); */
   font-family: "Syne Mono", monospace;
   font-weight: 600;
+  overflow-x: hidden;
+  width: 100vw;
+}
+@media only screen and (max-width: 640px) {
+  body {
+    width: 100%;
+  }
 }
