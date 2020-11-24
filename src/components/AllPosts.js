@@ -24,14 +24,24 @@ export default function AllPost() {
   return (
     <div className="bg-black bg-opacity-25 min-h-screen p-12 lg:px-40 lg:py-24 overflow-x-hidden">
       <div className="container mx-auto">
-        <h2 className="text-5xl text-center flex justify-center text-black text-opacity-75 flex-wrap">
+        <h2 className="text-5xl flex justify-center text-black text-opacity-75 flex-wrap">
           Blo
-          <sub className="text-5xl mt-2 transform rotate-45 -ml-4 mr-4">k</sub>
-          &nbsp;wierszowany
+          <sub
+            className="text-5xl mt-2 transform rotate-45 -ml-4 mr-4 text-white"
+            style={{
+              textShadow: "0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.72)",
+            }}
+          >
+            k
+          </sub>
+          &nbsp;<span className="text-center">wierszowany</span>
         </h2>
         <h3
           className="text-3xl text-white text-opacity-90 flex justify-center mb-12"
-          style={{ textShadow: "0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.72)" }}
+          style={{
+            textShadow: "0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.72)",
+            textAlign: "center",
+          }}
         >
           blog pismacki
         </h3>
