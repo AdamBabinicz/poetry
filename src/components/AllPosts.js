@@ -45,7 +45,7 @@ export default function AllPost() {
         >
           blog pismacki
         </h3>
-        <h4 className="mb-12 text-black text-opacity-50 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8">
+        <h4 className="mb-12 text-black text-opacity-50 grid lg:grid-cols-3 sm:grid-cols-1 gap-8">
           <p>
             Autor urodził się dokładnie 100 lat później, niż Nikola Tesla.
             <br /> Nie tytułuje się żadnym przedrostkiem. Nie ma wyuczonego
