@@ -22,8 +22,8 @@ export default function AllPost() {
       .catch(console.error);
   }, []);
   return (
-    <div className="bg-black bg-opacity-25 min-h-screen p-12 lg:px-40 lg:py-24 overflow-x-hidden">
-      <div className="container mx-auto">
+    <div className="bg-black bg-opacity-25 min-h-screen p-12 lg:px-40 lg:py-24 overflow-x-hidden w-screen">
+      <div className="container mx-auto flex justify-center flex-col">
         <h2 className="text-5xl flex justify-center text-black text-opacity-75 flex-wrap">
           Blo
           <sub
@@ -45,11 +45,11 @@ export default function AllPost() {
         >
           blog pismacki
         </h3>
-        <h4 className="mb-12 text-black text-opacity-50 grid md:grid-cols-3 gap-8">
+        <h4 className="mb-12 text-black text-opacity-50 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8">
           <p>
             Autor urodził się dokładnie 100 lat później, niż Nikola Tesla.
             <br /> Nie tytułuje się żadnym przedrostkiem. Nie ma wyuczonego
-            zawodu. W swoim życiu wykonywał ich wiele.
+            zawodu.
           </p>
           <p>
             Jako subiekt przez witrynę sklepową obserwował przechodzących ludzi.
@@ -60,6 +60,7 @@ export default function AllPost() {
             żadnej dziedzinie nie osiągnął mistrzostwa.
           </p>
         </h4>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 sm:grid-cols-1">
           {allPostsData &&
             allPostsData.map((post, index) => (
