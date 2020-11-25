@@ -21,6 +21,7 @@ export default function AllPost() {
       .then((data) => setAllPosts(data))
       .catch(console.error);
   }, []);
+
   return (
     <div className="bg-black bg-opacity-25 min-h-screen p-12 lg:px-40 lg:py-24">
       <div className="container mx-auto">
@@ -46,18 +47,24 @@ export default function AllPost() {
           blog pismacki
         </h3>
         <h4 className="mb-12 text-black text-opacity-50 grid lg:grid-cols-3 sm:grid-cols-1 gap-8">
-          <p>
+          <p className="bg-white p-4 bg-opacity-25">
             Autor urodził się dokładnie 100 lat później, niż Nikola Tesla.
             <br /> Nie tytułuje się żadnym przedrostkiem. Nie ma wyuczonego
             zawodu.
           </p>
-          <p>
+          <p className="bg-white p-4 bg-opacity-25">
             Jako subiekt przez witrynę sklepową obserwował przechodzących ludzi.
             Wtedy zauważył, że są jak „na sznurkach”.
           </p>
-          <p>
-            Interesuje się kosmologią i programowaniem. Nie posiada dorobku; w
-            żadnej dziedzinie nie osiągnął mistrzostwa.
+          <p
+            className="
+            bg-white
+            p-4
+            bg-opacity-25
+          "
+          >
+            Interesuje się kosmologią i&nbsp;programowaniem. Nie posiada
+            dorobku; w&nbsp;żadnej dziedzinie nie osiągnął mistrzostwa.
           </p>
         </h4>
 
